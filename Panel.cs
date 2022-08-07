@@ -2,9 +2,15 @@ using Terminal.Gui;
 
 namespace TGuiFrames;
 
-public class Panel : PanelView
+public class DashPanel : PanelView
 {
-    public Panel() 
+    public DashPanel(View child) : base(child)
     {
+        LayoutStyle = LayoutStyle.Computed;
+    }
+
+    public DashPanel() : base()
+    {
+        LayoutStyle = LayoutStyle.Computed;
     }
 }
